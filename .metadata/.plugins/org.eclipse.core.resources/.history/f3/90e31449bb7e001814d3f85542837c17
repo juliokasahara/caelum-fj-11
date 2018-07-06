@@ -1,0 +1,39 @@
+package View;
+
+import Model.Conta;
+
+public class Programa {
+	public static void main(String[] args) {
+		Conta ContaJulio;
+		ContaJulio = new Conta();
+		Conta ContaAline = new Conta();
+		
+		ContaJulio.setTitular("Julio");
+		ContaJulio.setSaldo(1000.0);
+		
+		ContaAline.setTitular("Aline");
+		ContaAline.setSaldo(500);
+		
+		
+		if(ContaJulio.Sacar(200)){
+			System.out.println("Saque efetuado com sucesso!");
+		}else{
+			System.out.println("Saldo insuficiente");
+		}
+		
+		ContaJulio.Deposito(500);
+		System.out.println(ContaJulio.getTitular()+" saldo: "+ ContaJulio.getSaldo());
+		System.out.println(ContaAline.getTitular()+" saldo: "+ ContaAline.getSaldo());
+		
+		if(ContaJulio.Transfere(ContaAline, 200)){
+			System.out.println("Transferencia efetuado com sucesso!");
+		}else{
+			System.out.println("Saldo insuficiente");
+		}
+		
+			
+		System.out.println(ContaJulio.getTitular()+" saldo: "+ ContaJulio.getSaldo());
+		System.out.println(ContaAline.getTitular()+" saldo: "+ ContaAline.getSaldo());
+		
+	}
+}

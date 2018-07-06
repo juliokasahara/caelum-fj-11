@@ -1,0 +1,47 @@
+package br.com.caelum.contas.modelo;
+
+public class SeguroDeVida implements Tributavel {
+
+	private double valor;
+	private int numeroApolice;
+	private String titular;
+	
+	Cliente cliente = new Cliente();
+
+	@Override
+	public double getValorImposto() {
+		return 42 + this.valor * 0.02;
+	}
+
+	@Override
+	public Cliente getTitular() {
+		return this.getTitular();
+	}
+
+	@Override
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int getNumeroApolice() {
+		return numeroApolice;
+	}
+
+	public void setNumeroApolice(int numeroApolice) {
+		this.numeroApolice = numeroApolice;
+	}
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+	
+	
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+}

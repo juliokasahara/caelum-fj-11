@@ -1,0 +1,28 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		//1:
+		for(int i = 150; i < 301; i++){
+			System.out.println(i);
+		}
+		
+		//2:
+		int soma =0;
+		int i = 1;
+		while(i < 1001){
+			soma += i;
+			i++;
+		}
+		System.out.println("Soma 1 ate 1000 :"+soma);
+		
+		//3:
+		i = 0;
+		do{
+			if(i%3 == 0)
+			System.out.println(i);
+		}while(i < 101);
+	}
+
+}

@@ -1,0 +1,56 @@
+package Model;
+
+public class Conta {
+	private int numero;
+	private double saldo;
+	private double limite;
+	
+	public Cliente titular = new Cliente();
+	
+	public boolean Sacar(double valor){
+		if(getSaldo() > valor){		
+			this.setSaldo(getSaldo() - valor);
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public void Deposito(double valor){
+			if(valor > 0){
+				this.setSaldo(getSaldo() + valor);
+				
+			}else{
+				System.out.println("Impossivel esse ação");
+			}
+	}
+	
+	public boolean TransferePara(Conta conta,double valor){
+		if(this.Sacar(valor)){
+			conta.Deposito(valor);
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public double getLimite() {
+		return limite;
+	}
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+}

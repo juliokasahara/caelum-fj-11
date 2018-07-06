@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.function.Function"/>
+<fullyQualifiedTypeName name="Model.Carro"/>
+<fullyQualifiedTypeName name="Model.Conta"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="Model.Pessoa"/>
+<fullyQualifiedTypeName name="Model.Porta"/>
+<fullyQualifiedTypeName name="Model.Casa"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Gerente"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.controller.ControleDeBonificacoes"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Funcionario"/>
+<fullyQualifiedTypeName name="Model.ProfessorDaFaculdade"/>
+<fullyQualifiedTypeName name="Model.RelatorioFuncionarios"/>
+<fullyQualifiedTypeName name="Model.EmpregadoDaFaculdade"/>
+<fullyQualifiedTypeName name="Model.ReitorDaFaculdade"/>
+<fullyQualifiedTypeName name="br.com.caelum.javafx.api.main.OlaMundo"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.main.TelaDeContas"/>
+<fullyQualifiedTypeName name="br.com.caelum.javafx.api.main.TelaDeContas"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Conta"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.ContaCorrente"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.ContaPoupanca"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.SeguroDeVida"/>
+<fullyQualifiedTypeName name="br.com.caelum.javafx.api.util.Evento"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Tributavel"/>
+</qualifiedTypeNameHistroy>

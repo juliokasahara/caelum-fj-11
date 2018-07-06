@@ -1,0 +1,14 @@
+package View;
+
+import Model.Conta;
+
+public class Programa {
+	public static void main(String[] args) {
+		Conta ContaJulio;
+		ContaJulio = new Conta(100, 1000, "Julio", "12485423187");
+		Conta ContaAline = new Conta();
+		
+		
+		
+	}
+}

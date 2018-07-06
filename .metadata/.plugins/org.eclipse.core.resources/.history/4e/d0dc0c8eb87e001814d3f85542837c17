@@ -1,0 +1,18 @@
+package View;
+
+import Model.Conta;
+
+public class Programa {
+	public static void main(String[] args) {
+		Conta minhaConta;
+		minhaConta = new Conta();
+		
+		minhaConta.setTitular("Julio");
+		minhaConta.setSaldo(1000.0);
+		
+		minhaConta.Sacar(200);
+		minhaConta.Deposito(500);
+		System.out.println(minhaConta.getTitular()+" saldo: "+ minhaConta.getSaldo());
+		
+	}
+}

@@ -1,0 +1,17 @@
+package Model;
+
+public class EmpregadoDaFaculdade {
+	
+	private String nome;
+	private double salario;
+	
+	public double getSalario() {
+		return salario;
+	}
+	
+	public String getInfo(){
+		return "Nome:" + this.nome + " com salario:" + this.getSalario();
+	}
+	
+
+}

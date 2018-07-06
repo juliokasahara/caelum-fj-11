@@ -1,0 +1,77 @@
+package Model;
+
+public class Conta {
+	private int numero;
+	private double contaCorrente;
+	private double limite;
+	private double contaPoupanca;
+	
+	
+	public Conta(double contaCorrente, double contaPoupanca,String nome,String cpf) {
+		this.setcontaCorrente(contaCorrente);
+		this.setcontaPoupanca(contaPoupanca);
+		Cliente titular = new Cliente(nome,cpf);
+	}
+	
+	
+	public Conta(int numero, double contaCorrente ,String nome,String sobrenome,String cpf) {
+		this.setcontaCorrente(contaCorrente);
+		this.setcontaPoupanca(contaPoupanca);
+		Cliente titular = new Cliente(nome,sobrenome,cpf);
+	}
+
+
+	public boolean Sacar(double valor){
+		if(getcontaCorrente() > valor){		
+			this.setcontaCorrente(getcontaCorrente() - valor);
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public void Deposito(double valor){
+			this.setcontaCorrente(getcontaCorrente() + valor);
+	}
+	
+	public boolean TransferePara(Conta conta,double valor){
+		if(this.Sacar(valor)){
+			conta.Deposito(valor);
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public double getLimite() {
+		return limite;
+	}
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+	public double getcontaCorrente() {
+		return contaCorrente;
+	}
+
+	public void setcontaCorrente(double contaCorrente) {
+		this.contaCorrente = contaCorrente;
+	}
+
+	public double getcontaPoupanca() {
+		return contaPoupanca;
+	}
+
+	public void setcontaPoupanca(double contaPoupanca) {
+		this.contaPoupanca = contaPoupanca;
+	}
+	
+	
+	
+}

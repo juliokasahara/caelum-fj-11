@@ -1,0 +1,16 @@
+package View;
+
+import Model.Conta;
+
+public class Programa {
+	public static void main(String[] args) {
+		Conta ContaJulio;
+		ContaJulio = new Conta(100, 1000, "Julio Cesar","Dias Kasahara", "12485423187");
+		Conta ContaAline = new Conta(10, 100, "aline", "123456789");
+		
+		System.out.println(ContaJulio);
+		System.out.println("------------------------");
+		System.out.println(ContaAline);
+		
+	}
+}

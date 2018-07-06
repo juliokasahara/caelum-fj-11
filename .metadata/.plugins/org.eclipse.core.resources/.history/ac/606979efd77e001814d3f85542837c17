@@ -1,0 +1,17 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+
+			System.out.println(CalculaFibonacci(8));
+
+
+	}
+
+	public static int CalculaFibonacci(int num){
+		return CalculaFibonacci(num -1);
+	}
+}
+
+

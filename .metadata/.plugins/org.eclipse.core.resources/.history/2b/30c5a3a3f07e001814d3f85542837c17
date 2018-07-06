@@ -1,0 +1,77 @@
+package Model;
+
+public class Casa {
+	private String cor;
+	private static boolean porta1;
+	private static boolean porta2;
+	private static boolean porta3;
+	
+	
+	public static int QuantasPortasEstaoAbertas(){
+		int quantidade = 0;
+		
+		if(isPorta1())
+			quantidade ++;
+		
+	
+		if(isPorta2())
+			quantidade ++;
+		
+		
+		if(isPorta3())
+			quantidade ++;
+			
+		return quantidade;
+		
+	}
+	
+	public static void Abre(int numPorta){
+		if(numPorta == 1){
+			setPorta1(true);
+		}
+		if(numPorta == 2){
+			setPorta2(true);
+		}
+		else{
+			setPorta3(true);
+		}
+	}
+	
+	public static void Fechar(int numPorta){
+		if(numPorta == 1){
+			setPorta1(false);
+		}
+		else if(numPorta == 2){
+			setPorta2(false);
+		}
+		else{
+			setPorta3(false);
+		}
+	}
+	
+	
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	public static boolean isPorta1() {
+		return porta1;
+	}
+	public static void setPorta1(boolean porta) {
+		porta1 = porta;
+	}
+	public static boolean isPorta2() {
+		return porta2;
+	}
+	public static void setPorta2(boolean porta) {
+		porta2 = porta;
+	}
+	public static boolean isPorta3() {
+		return porta3;
+	}
+	public static void setPorta3(boolean porta) {
+		porta3 = porta;
+	}
+}

@@ -1,0 +1,54 @@
+package Model;
+
+public class Porta {
+	private boolean aberta;
+	private String cor;
+	private double dimensaoX,dimensaoY,dimensaZ;
+	
+	
+	void Abre(){
+		this.setAberta(true);
+	}
+	void Fechada(){
+		this.setAberta(false);
+	}
+	
+	void Pintar(String cor){
+		this.setCor(cor);
+	}
+	
+	boolean EstaAberta(){
+		return isAberta();
+	}
+	
+	public boolean isAberta() {
+		return aberta;
+	}
+	public void setAberta(boolean aberta) {
+		this.aberta = aberta;
+	}
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	public double getDimensaoX() {
+		return dimensaoX;
+	}
+	public void setDimensaoX(double dimensaoX) {
+		this.dimensaoX = dimensaoX;
+	}
+	public double getDimensaoY() {
+		return dimensaoY;
+	}
+	public void setDimensaoY(double dimensaoY) {
+		this.dimensaoY = dimensaoY;
+	}
+	public double getDimensaZ() {
+		return dimensaZ;
+	}
+	public void setDimensaZ(double dimensaZ) {
+		this.dimensaZ = dimensaZ;
+	}
+}

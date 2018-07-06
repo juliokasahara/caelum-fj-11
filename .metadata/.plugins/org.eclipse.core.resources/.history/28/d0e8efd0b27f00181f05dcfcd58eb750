@@ -1,0 +1,15 @@
+package Model;
+
+public class ProfessorDaFaculdade extends EmpregadoDaFaculdade {
+	
+	private int horaAula = 0;
+
+	public ProfessorDaFaculdade(String nome, double salario) {
+		super(nome, salario);
+	}
+	
+	public double getGastos(int hora){
+		this.horaAula += hora;
+		return this.salario += 10 * hora;
+	}
+}

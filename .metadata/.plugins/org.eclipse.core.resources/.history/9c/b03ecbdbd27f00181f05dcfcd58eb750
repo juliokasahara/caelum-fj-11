@@ -1,0 +1,83 @@
+package br.com.caelum.contas.modelo;
+
+public class Conta {
+	private int numero;
+	private double saldo;
+	private double limite;
+	private static int totalDeContas;
+	private int agencia;
+
+	public Conta() {
+		Conta.totalDeContas++;
+	}
+
+	public Cliente titular = new Cliente();
+
+	public boolean saca(double valor) {
+		if (getSaldo() >= valor) {
+			this.setSaldo(getSaldo() - valor);
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void deposito(double valor) {
+		if (valor > 0) {
+			this.setSaldo(getSaldo() + valor);
+
+		} else {
+			System.out.println("Impossivel depositar valor negativo");
+		}
+	}
+
+	public boolean transferePara(Conta conta, double valor) {
+		if (this.saca(valor)) {
+			conta.deposito(valor);
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public double getSalo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+	public static int getTotalDeContas() {
+		return Conta.totalDeContas;
+	}
+
+	public Cliente getTitular() {
+		return titular;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+}

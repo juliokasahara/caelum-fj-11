@@ -1,0 +1,22 @@
+package View;
+
+import Model.*;
+
+public class Principal {
+	public static void main(String[] args) {
+	
+		Pessoa julio = new Pessoa("julio",11);
+		julio.FazAniversario();
+		System.out.println(julio);
+		
+		Porta portaCasa = new Porta();
+		System.out.println(portaCasa.EstaAberta());
+		portaCasa.Abre();
+		portaCasa.Pintar("Azul");
+		portaCasa.setDimensaoZ(5);
+		portaCasa.setDimensaoX(10);
+		portaCasa.setDimensaoY(15);
+		System.out.println(portaCasa);
+		
+	}
+}

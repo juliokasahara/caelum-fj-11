@@ -1,0 +1,21 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+
+			CalculaFibonacci(8);
+
+
+	}
+
+	public static void CalculaFibonacci(int num){
+		 if(num != 0){
+
+			 CalculaFibonacci(num -1);
+			 System.out.println(num);	
+		 }
+	}
+}
+
+

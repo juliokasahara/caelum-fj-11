@@ -1,0 +1,55 @@
+package Model;
+
+public class Carro {
+    private String cor;
+    private String modelo;
+    private double velocidadeAtual;
+    private double velocidadeMaxima;
+    
+    Motor motorDoCarro = new Motor();
+    
+    public void Ligar(){
+    	System.out.println("O Carro está ligado");
+    }
+    
+    public void Acelerar(double quantidade){
+    	this.velocidadeAtual += quantidade;
+    }
+
+    public int pegaMarcha(){
+    	if(velocidadeAtual < 0){
+    		return -1;
+    	}else if (this.velocidadeAtual > -1 && this.velocidadeAtual < 40) {
+			return 1;
+		}else if (this.velocidadeAtual > 39 && this.velocidadeAtual < 80) {
+			return 2;
+		}else{
+			return 3;
+		}
+    }
+    
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public double getVelocidadeAtual() {
+		return velocidadeAtual;
+	}
+	public void setVelocidadeAtual(double velocidadeAtual) {
+		this.velocidadeAtual = velocidadeAtual;
+	}
+	public double getVelocidadeMaxima() {
+		return velocidadeMaxima;
+	}
+	public void setVelocidadeMaxima(double velocidadeMaxima) {
+		this.velocidadeMaxima = velocidadeMaxima;
+	} 
+}

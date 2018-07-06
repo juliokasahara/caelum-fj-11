@@ -1,0 +1,42 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		//1:
+		System.out.println("Imprima todos os números de 150 a 300.");
+		for(int i = 150; i < 301; i++){
+			System.out.println(i);
+		}
+		
+		//2:
+		System.out.println("Imprima a soma de 1 até 1000.");
+		int soma =0;
+		int i = 1;
+		while(i < 1001){
+			soma += i;
+			i++;
+		}
+		System.out.println("Soma 1 ate 1000 :"+soma);
+		
+		//3:		
+		System.out.println("Imprima todos os múltiplos de 3, entre 1 e 100.");
+		i = 0;
+		do{
+			if(i%3 == 0)
+			System.out.println(i);
+			i++;
+		}while(i < 101);
+		
+		//4:
+		System.out.println("Imprima os fatoriais de 1 a 10.");	
+		int fatorial=0;
+		for(int x = 1 ; x < 11 ; x++){
+			for(int n = 1; n < x; n++){
+				fatorial = n*(n-1);
+				System.out.println(fatorial);
+			}
+		}
+	}
+
+}
