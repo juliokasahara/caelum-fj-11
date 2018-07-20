@@ -24,7 +24,7 @@ public class ManipuladorDeContas {
 		this.conta.setNumero(evento.getInt("numero"));
 		this.conta.getTitular().setNome(evento.getString("titular"));
 		
-		System.out.println(this.conta.recuperaDadosParaImpressao());
+		//System.out.println(this.conta.recuperaDadosParaImpressao());
 	}
 
 	public void deposita(Evento evento) {
